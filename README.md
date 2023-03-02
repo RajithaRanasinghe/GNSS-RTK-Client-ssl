@@ -10,7 +10,7 @@ To run the GUI program, simply run
 ```
 python NtripClientGUI.py.
 ```
-![APP Screenshot](Screenshots/UI.PNG)
+![APP Screenshot](Screenshots/UI.png)
 
 # Contributing
 Contributions are welcome! If you find a bug or would like to suggest a new feature, please open an issue or submit a pull request.
