@@ -3,8 +3,8 @@ This code can be used to automatically get the nearest Mountpoint for GNSS RTK a
 GUI can be use for quick testing.
 
 The Code is tested for 
-1.AUSCORS NTRIP Broadcaster
-2.Rtk2Go
+1. AUSCORS NTRIP Broadcaster
+2. Rtk2Go
 
 # Installation
 Install the required dependencies:
