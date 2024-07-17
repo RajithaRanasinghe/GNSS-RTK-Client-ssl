@@ -1,6 +1,6 @@
 import sys
-from PySide2.QtWidgets import QApplication, QMainWindow, QLabel, QTextEdit, QPushButton, QSizePolicy, QWidget, QGridLayout, QProgressBar
-from PySide2.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QTextEdit, QPushButton, QSizePolicy, QWidget, QGridLayout, QProgressBar
+from PySide6.QtCore import Qt
 from NtripClientSSL import request_mountpoints, parse_mountpoints_info, connect_mountpoint, get_RTCM3_frm_socket, get_RTCM3_frm_host
 
 class CustomGUI(QMainWindow):
@@ -76,7 +76,7 @@ class CustomGUI(QMainWindow):
         layout.addWidget(self.get_rtcmn3_button, 13, 0, 1, 2)
         layout.addWidget(self.clear_button, 14, 0, 1, 2)
         layout.addWidget(self.progressbar, 15, 0, 1, 2)
-        
+
 
         # Create central widget and set layout
         central_widget = QWidget()
@@ -148,7 +148,7 @@ class CustomGUI(QMainWindow):
             self.progressbar.setValue(30 + i*20)
         '''
         self.append_text(str(get_RTCM3_frm_host(self.hostname, self.port, self.username, self.password, self.mountpoint)))
-            
+
 
         # Finish the progress bar
         self.progressbar.setValue(100)
